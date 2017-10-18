@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="exit">Salir</string>
+    <string name="title_asteroids">Asteroides</string>
+    <string name="start">Comenzar</string>
+    <string name="about">Acerca de</string>
+    <string name="action_settings">Configuracion</string>
+    <string name="config">Configuracion</string>
+    <string name="hi_label">hola</string>
+    <string name="label_chain_style">Estilo de cadena:</string>
+    <string name="label_chain_style_package">Package</string>
+    <string name="label_chain_style_spread">Spread</string>
+    <string name="label_chain_style_spread_inside">Spread Inside</string>
+    <string name="hint_input">Introduce un número</string>
+    <string name="btn_add_zero">Agregar Cero a la derecha</string>
+    <string name="hint_result">Resultado</string>
+    <string name="place_name">Nombre</string>
+    <string name="place_type">Tipo:</string>
+    <string name="place_address">Direccion</string>
+    <string name="place_phone">Telefono</string>
+    <string name="place_url">Url</string>
+    <string name="place_comment">Comentario</string>
+    <string name="btn_show_places">Mostrar Lugares</string>
+    <string name="title_add_place">Nuevo Lugar</string>
+    <string name="title_calculator">Calculadora</string>
+    <string name="title_calculator_plus">Calculadora+</string>
+    <string name="title_constraints">Constraints</string>
+    <string name="title_custom_buttons">Boton Personalizado</string>
+    <string name="title_my_places">Mis Lugares</string>
+    <string name="textview_label">Vista de Texto</string>
+</resources>

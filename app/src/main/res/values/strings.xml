@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name" translatable="false">TorresJ_U2</string>
+    <string name="action_settings">Settings</string>
+
+
+    <!-- Asteroids Fragment -->
+    <string name="title_asteroids">Asteroids</string>
+    <string name="start">Play</string>
+    <string name="config">Configure</string>
+    <string name="about">About Us</string>
+    <string name="exit">Exit</string>
+
+    <!-- Constraints Fragment -->
+    <string name="title_constraints">Constraints</string>
+    <string name="hi_label">hola</string>
+    <string name="textview_label">TextView</string>
+    <string name="label_chain_style">Chain Style:</string>
+    <string name="label_chain_style_package">Package</string>
+    <string name="label_chain_style_spread">Spread</string>
+    <string name="label_chain_style_spread_inside">Spread Inside</string>
+
+    <!-- Custom Button -->
+    <string name="title_custom_buttons">Custom Buttons</string>
+    <string name="hint_input">Write a Number</string>
+    <string name="btn_add_zero">Add Zero at right</string>
+    <string name="hint_result">Result</string>
+
+    <!-- Calculator -->
+    <string name="title_calculator">Calculator</string>
+    <string name="title_calculator_plus">Calculator+</string>
+
+    <!-- My Places -->
+    <string name="title_my_places">My Places</string>
+    <string name="btn_show_places">Show Places</string>
+
+    <!-- Add Place -->
+    <string name="title_add_place">Add Place</string>
+    <string name="place_name">Name</string>
+    <string name="place_type">Type:</string>
+    <string name="place_address">Address</string>
+    <string name="place_phone">Phone</string>
+    <string name="place_url">Url</string>
+    <string name="place_comment">Comment</string>
+
+</resources>

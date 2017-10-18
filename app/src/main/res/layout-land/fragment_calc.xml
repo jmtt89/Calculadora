@@ -1,0 +1,188 @@
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:background="@android:color/white"
+        android:gravity="end"
+        android:text="0"
+        android:textAlignment="textEnd"
+        android:maxLines="1"
+
+
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+
+        app:layout_constraintVertical_chainStyle="packed"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/btn_0"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="wrap_content"
+
+        android:layout_height="0dp"
+
+        android:tag="0"
+
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/tableLayout"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tableLayout"
+        app:layout_constraintTop_toTopOf="@+id/tableLayout"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginLeft="32dp"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintHorizontal_chainStyle="packed"
+
+        app:layout_constraintRight_toLeftOf="@+id/operations_wrapper"
+        app:layout_constraintLeft_toRightOf="@+id/btn_0"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/result"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn_1"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:tag="1"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/btn_2"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:tag="2"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/btn_3"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:tag="3"
+                android:text="3" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn_4"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:tag="4"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/btn_5"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:tag="5"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/btn_6"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:tag="6"
+                android:text="6" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn_7"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:tag="7"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/btn_8"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:tag="8"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/btn_9"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:tag="9"
+                android:text="9" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/operations_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+
+        app:layout_constraintHorizontal_chainStyle="packed"
+
+        app:layout_constraintTop_toTopOf="@+id/tableLayout"
+        app:layout_constraintBottom_toBottomOf="@+id/tableLayout"
+        app:layout_constraintRight_toLeftOf="@+id/operations_wrapper_2"
+        app:layout_constraintLeft_toRightOf="@+id/tableLayout">
+        <Button
+            android:id="@+id/btn_op_plus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+"
+            style="@style/Widget.AppCompat.Button.Small"/>
+
+        <Button
+            android:id="@+id/btn_op_equal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="="
+            style="@style/Widget.AppCompat.Button.Small"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/operations_wrapper_2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+
+        app:layout_constraintHorizontal_chainStyle="packed"
+
+        app:layout_constraintTop_toTopOf="@+id/operations_wrapper"
+        app:layout_constraintBottom_toBottomOf="@+id/operations_wrapper"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/operations_wrapper"
+        android:layout_marginRight="32dp">
+
+        <Button
+            android:id="@+id/btn_op_clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="C"
+            style="@style/Widget.AppCompat.Button.Small"/>
+
+        <Button
+            android:id="@+id/btn_op_convert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Pts"
+            style="@style/Widget.AppCompat.Button.Small"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

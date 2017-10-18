@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:typeface">serif</item>
+        <item name="android:colorBackground">@android:color/darker_gray</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="EstiloBoton" parent="@style/Widget.AppCompat.Button">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="EstiloBoton.Alternativo">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginBottom">24dp</item>
+    </style>
+
+    <style name="ButtonSquare" parent="Base.Widget.AppCompat.Button.Borderless">
+        <!--<item name="app:autoSizeTextType">uniform</item>-->
+        <item name="android:textSize">32sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:lines">1</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="ButtonSquare.Actions">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+</resources>
